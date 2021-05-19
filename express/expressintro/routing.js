@@ -8,6 +8,11 @@ var app = express();
 var publicPath = path.resolve(__dirname, "images");
 app.use(express.static(publicPath));
 
+// Matching all of a particular format. Has a security issue to be discussed later.
+app.get("/user/:who", function(request, response){
+    response.end("Hello, Master " + request.params.who + ".");
+});
+
 app.get("/", function(request, response){
     response.end("Welcome to my homepage!");
 });
