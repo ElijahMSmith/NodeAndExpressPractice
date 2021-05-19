@@ -1,0 +1,8 @@
+{
+  "name": "randomintgen",
+  "description": "Testing node apps with mustache module",
+  "version": "0.0.1",
+  "main": "randominteger.js",
+  "author": "Eli",
+  "dependencies": {}
+}
